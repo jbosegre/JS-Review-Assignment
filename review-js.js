@@ -1,3 +1,14 @@
+/**
+ * Created by PhpStorm.
+ * User: jbosegre
+ * Date: 1/14/2019
+ * Time: 3:13 PM
+ *
+ * this javascript page is separate from the main page
+ * as its sole purpose is to run all of the javascript
+ * function for the review assignment
+ */
+
 var $countNumber = 0;
 var $maxNum = 100;
 
@@ -23,24 +34,18 @@ function FizzBuzz(){
     }
 }
 
-function countBs(string) {
+function countBs(string, char) {
+    countChar(string, char);
+}
+
+function countChar(string, char) {
     var count = 0;
     for (var i = 0; i < string.length; i++) {
-        if (string.charAt(i) === "B") {
+        if (str.charAt(i) === "char") {
             count++;
         }
     }
     return (count);
-}
-
-function countChar(str, char) {
-    var count = 0;
-    for (var i = 0; i < str.length; i++) {
-        if (str.charAt(i) === "char") {
-            count++;
-            return (count);
-        }
-    }
 }
 
 
